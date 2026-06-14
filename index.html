@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AscendOS — Your AI-Powered Life Operating System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <div class="logo-icon">⚡</div>
+        <span class="logo-text">AscendOS</span>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#features" onclick="closeNav()">Features</a>
+        <a href="#modules" onclick="closeNav()">Modules</a>
+        <a href="#health" onclick="closeNav()">Health</a>
+        <a href="#download" class="nav-cta" onclick="closeNav()">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="badge">🤖 AI-Powered · Android App</div>
+      <h1 class="hero-title">Your Life,<br /><span class="gradient-text">Operating System</span></h1>
+      <p class="hero-sub">AscendOS brings together habits, fitness, finance, focus, goals, diary, planner, AI coaching and more — into one intelligent system that learns and grows with you.</p>
+      <div class="hero-actions">
+        <a href="#download" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16l-6-6h4V4h4v6h4l-6 6z"/><path d="M4 20h16"/></svg>
+          Download APK
+        </a>
+        <a href="#features" class="btn-secondary">Explore Features</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Modules</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">AI</span><span class="stat-label">Coaching</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Free</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFE SCORE BANNER -->
+  <section class="score-banner">
+    <div class="container">
+      <div class="score-card">
+        <div class="score-ring">
+          <svg viewBox="0 0 100 100" class="ring-svg">
+            <circle cx="50" cy="50" r="42" class="ring-bg"/>
+            <circle cx="50" cy="50" r="42" class="ring-fill" style="--pct:0.78"/>
+          </svg>
+          <div class="ring-label"><span class="ring-num">78</span><span class="ring-sub">/100</span></div>
+        </div>
+        <div class="score-info">
+          <h2>Life Score</h2>
+          <p>AscendOS calculates your daily Life Score across discipline, productivity, fitness and wellbeing — giving you a real-time pulse on every area of your life.</p>
+          <div class="score-bars">
+            <div class="sbar"><span>Discipline</span><div class="sbar-track"><div class="sbar-fill" style="width:82%;--c:#7c3aed"></div></div><span class="sbar-val">82</span></div>
+            <div class="sbar"><span>Productivity</span><div class="sbar-track"><div class="sbar-fill" style="width:74%;--c:#06b6d4"></div></div><span class="sbar-val">74</span></div>
+            <div class="sbar"><span>Fitness</span><div class="sbar-track"><div class="sbar-fill" style="width:69%;--c:#22c55e"></div></div><span class="sbar-val">69</span></div>
+            <div class="sbar"><span>Wellbeing</span><div class="sbar-track"><div class="sbar-fill" style="width:86%;--c:#f59e0b"></div></div><span class="sbar-val">86</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">✨ Core Features</div>
+        <h2>Everything you need to <span class="gradient-text">level up</span></h2>
+        <p>AscendOS is not just an app — it's your personal life command centre.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-wide">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Morning Briefing</h3>
+          <p>Get a personalised AI-generated briefing every morning that summarises your life score, pending tasks, habit rate, focus minutes and financial health — powered by Google Gemini.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3>Gamification & XP</h3>
+          <p>Earn XP, unlock achievements and level up by completing habits, goals and focus sessions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3>Biometric Lock</h3>
+          <p>Protect your diary, notes and data with fingerprint or face unlock.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h3>Firebase Sync</h3>
+          <p>All your data syncs automatically to Firebase so it's safe across devices.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Analytics</h3>
+          <p>Beautiful charts showing your step trends, sleep patterns, habit streaks and focus time over weeks.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>Smart Notifications</h3>
+          <p>Habit reminders, focus timers and daily briefing notifications keep you on track.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES -->
+  <section class="section section-dark" id="modules">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">📦 12 Modules</div>
+        <h2>One app. <span class="gradient-text">Infinite possibilities.</span></h2>
+        <p>Every module is purpose-built to help you master a different area of your life.</p>
+      </div>
+      <div class="modules-grid">
+        <div class="module-card" style="--mc:#7c3aed">
+          <div class="module-emoji">📋</div>
+          <h4>Planner</h4>
+          <p>Daily tasks with priority levels, completion tracking and overdue alerts.</p>
+        </div>
+        <div class="module-card" style="--mc:#06b6d4">
+          <div class="module-emoji">📚</div>
+          <h4>Study</h4>
+          <p>Pomodoro sessions, subject tracking and study streaks.</p>
+        </div>
+        <div class="module-card" style="--mc:#22c55e">
+          <div class="module-emoji">💪</div>
+          <h4>Fitness</h4>
+          <p>Workout logging, Health Connect integration for steps, sleep, calories and heart rate.</p>
+        </div>
+        <div class="module-card" style="--mc:#f59e0b">
+          <div class="module-emoji">💰</div>
+          <h4>Finance</h4>
+          <p>Income, expenses, budgets, savings goals and monthly summaries.</p>
+        </div>
+        <div class="module-card" style="--mc:#ef4444">
+          <div class="module-emoji">🎯</div>
+          <h4>Goals</h4>
+          <p>Set long-term goals, break them into milestones and track progress.</p>
+        </div>
+        <div class="module-card" style="--mc:#8b5cf6">
+          <div class="module-emoji">📖</div>
+          <h4>Diary</h4>
+          <p>Private encrypted journal with mood tracking and daily reflections.</p>
+        </div>
+        <div class="module-card" style="--mc:#06b6d4">
+          <div class="module-emoji">📝</div>
+          <h4>Notes</h4>
+          <p>Rich text notes organised by category with search functionality.</p>
+        </div>
+        <div class="module-card" style="--mc:#f97316">
+          <div class="module-emoji">🎙️</div>
+          <h4>Voice Notes</h4>
+          <p>Record, playback and organise voice memos on the go.</p>
+        </div>
+        <div class="module-card" style="--mc:#7c3aed">
+          <div class="module-emoji">🤖</div>
+          <h4>AI Coach</h4>
+          <p>Chat with your personal AI life coach powered by Google Gemini for advice on any area.</p>
+        </div>
+        <div class="module-card" style="--mc:#f59e0b">
+          <div class="module-emoji">🏆</div>
+          <h4>Ascend (Gamification)</h4>
+          <p>XP system, achievements, streaks and level progression.</p>
+        </div>
+        <div class="module-card" style="--mc:#22c55e">
+          <div class="module-emoji">🌌</div>
+          <h4>Timeline</h4>
+          <p>A visual timeline of all your life events, milestones and achievements.</p>
+        </div>
+        <div class="module-card" style="--mc:#ec4899">
+          <div class="module-emoji">🧠</div>
+          <h4>Wellbeing</h4>
+          <p>Mood tracking, stress levels, gratitude journaling and wellbeing score.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEALTH CONNECT -->
+  <section class="section" id="health">
+    <div class="container">
+      <div class="health-split">
+        <div class="health-text">
+          <div class="badge">💚 Health Connect</div>
+          <h2>Real health data, <span class="gradient-text">real insights</span></h2>
+          <p>AscendOS connects to Google Health Connect to pull your real-time health data directly into the app.</p>
+          <div class="health-items">
+            <div class="health-item">
+              <span class="health-icon">👟</span>
+              <div><strong>Steps</strong><br/>Daily step count with 10,000 step goal tracking</div>
+            </div>
+            <div class="health-item">
+              <span class="health-icon">😴</span>
+              <div><strong>Sleep</strong><br/>Sleep duration with 8-hour goal and trend charts</div>
+            </div>
+            <div class="health-item">
+              <span class="health-icon">🔥</span>
+              <div><strong>Calories</strong><br/>Active calories burned throughout the day</div>
+            </div>
+            <div class="health-item">
+              <span class="health-icon">❤️</span>
+              <div><strong>Heart Rate</strong><br/>Resting heart rate monitoring</div>
+            </div>
+            <div class="health-item">
+              <span class="health-icon">⚖️</span>
+              <div><strong>Weight</strong><br/>Body weight tracking over time</div>
+            </div>
+          </div>
+          <div class="health-note">
+            <span>ℹ️</span>
+            <p>Requires <strong>Health Connect</strong> app (free, by Google). Works on Android 12+.</p>
+          </div>
+        </div>
+        <div class="health-cards">
+          <div class="hcard"><span class="hcard-icon">👟</span><span class="hcard-val">8,432</span><span class="hcard-label">Steps today</span><div class="hcard-bar"><div style="width:84%"></div></div></div>
+          <div class="hcard"><span class="hcard-icon">😴</span><span class="hcard-val">7.2h</span><span class="hcard-label">Sleep last night</span><div class="hcard-bar"><div style="width:90%;--bc:#8b5cf6"></div></div></div>
+          <div class="hcard"><span class="hcard-icon">🔥</span><span class="hcard-val">423</span><span class="hcard-label">Calories burned</span><div class="hcard-bar"><div style="width:60%;--bc:#f97316"></div></div></div>
+          <div class="hcard"><span class="hcard-icon">❤️</span><span class="hcard-val">68 bpm</span><span class="hcard-label">Resting HR</span><div class="hcard-bar"><div style="width:40%;--bc:#ef4444"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABITS & FOCUS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="split-section">
+        <div class="split-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Habit Tracker</h3>
+          <p>Build daily, weekly or custom habits with streaks, completion rates and reminders. The habit completion rate feeds directly into your Life Score.</p>
+          <div class="habit-list">
+            <div class="habit-item done">✅ Morning Workout</div>
+            <div class="habit-item done">✅ Read 30 mins</div>
+            <div class="habit-item">⬜ Meditate</div>
+            <div class="habit-item">⬜ No social media</div>
+          </div>
+          <div class="completion-badge">Today: 50% complete</div>
+        </div>
+        <div class="split-card">
+          <div class="feature-icon">⏱️</div>
+          <h3>Focus Timer</h3>
+          <p>Pomodoro-based focus sessions with customisable work and break durations. Track total focus minutes per day and week.</p>
+          <div class="focus-display">
+            <div class="focus-circle">
+              <span class="focus-time">25:00</span>
+              <span class="focus-label">Focus</span>
+            </div>
+          </div>
+          <div class="focus-stats">
+            <div><strong>124 min</strong><br/><small>Today</small></div>
+            <div><strong>6.2 hrs</strong><br/><small>This week</small></div>
+            <div><strong>14 day</strong><br/><small>Streak</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINANCE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">💰 Finance Module</div>
+        <h2>Know where your <span class="gradient-text">money goes</span></h2>
+        <p>Track every rupee, set budgets and watch your savings grow.</p>
+      </div>
+      <div class="finance-grid">
+        <div class="finance-card income">
+          <div class="finance-label">Monthly Income</div>
+          <div class="finance-amount">₹45,000</div>
+          <div class="finance-trend">↑ On track</div>
+        </div>
+        <div class="finance-card expense">
+          <div class="finance-label">Monthly Expenses</div>
+          <div class="finance-amount">₹28,430</div>
+          <div class="finance-trend">↓ Under budget</div>
+        </div>
+        <div class="finance-card savings">
+          <div class="finance-label">Net Savings</div>
+          <div class="finance-amount">₹16,570</div>
+          <div class="finance-trend">↑ 36.8% saved</div>
+        </div>
+      </div>
+      <div class="finance-features">
+        <div class="ff-item">📊 Category-wise expense breakdown</div>
+        <div class="ff-item">🎯 Savings goals with progress tracking</div>
+        <div class="ff-item">📅 Monthly income vs expense charts</div>
+        <div class="ff-item">🔔 Budget alerts when overspending</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="section section-dark download-section" id="download">
+    <div class="container">
+      <div class="download-wrapper">
+        <div class="download-text">
+          <div class="badge">📲 Get the App</div>
+          <h2>Download <span class="gradient-text">AscendOS</span></h2>
+          <p>Free to download. No subscriptions. No hidden costs. Install the APK directly on your Android device.</p>
+          <div class="requirements">
+            <div class="req-item">✅ Android 8.0+ (API 26+)</div>
+            <div class="req-item">✅ Works on Android 12 with Health Connect</div>
+            <div class="req-item">✅ Google account for AI features</div>
+            <div class="req-item">✅ Firebase-backed data sync</div>
+          </div>
+          <div class="download-buttons">
+            <a href="AscendOS.apk" class="btn-primary btn-large" download>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16l-6-6h4V4h4v6h4l-6 6z"/><path d="M4 20h16"/></svg>
+              Download APK
+            </a>
+          </div>
+          <p class="install-note">⚠️ Enable <strong>Install from unknown sources</strong> in your Android settings before installing.</p>
+        </div>
+        <div class="download-steps">
+          <h3>How to Install</h3>
+          <div class="step"><div class="step-num">1</div><div>Download the APK file to your Android device</div></div>
+          <div class="step"><div class="step-num">2</div><div>Open <strong>Settings → Security → Unknown Sources</strong> and enable it</div></div>
+          <div class="step"><div class="step-num">3</div><div>Open the downloaded APK file and tap <strong>Install</strong></div></div>
+          <div class="step"><div class="step-num">4</div><div>For Health data: install <strong>Health Connect</strong> from Play Store and grant permissions</div></div>
+          <div class="step"><div class="step-num">5</div><div>Sign in with your Google account to enable AI features & cloud sync</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="logo">
+          <div class="logo-icon">⚡</div>
+          <span class="logo-text">AscendOS</span>
+        </div>
+        <p class="footer-tagline">Your AI-Powered Life Operating System</p>
+        <div class="footer-modules">
+          <span>Planner</span><span>Study</span><span>Fitness</span><span>Finance</span><span>Goals</span>
+          <span>Diary</span><span>Notes</span><span>Voice</span><span>AI Coach</span><span>Gamification</span>
+          <span>Timeline</span><span>Wellbeing</span>
+        </div>
+        <p class="footer-copy">Built with Flutter · Powered by Firebase & Google Gemini</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    function closeNav() { links.classList.remove('open'); }
+  </script>
+</body>
+</html>
