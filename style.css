@@ -122,11 +122,21 @@ body {
 .health-note p { line-height: 1.5; }
 .health-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .hcard { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 20px; }
+.hcard-wide { grid-column: span 2; display: flex; align-items: center; gap: 14px; background: rgba(6,182,212,0.06); border-color: rgba(6,182,212,0.2); }
 .hcard-icon { font-size: 24px; display: block; margin-bottom: 8px; }
 .hcard-val { display: block; font-size: 22px; font-weight: 800; color: var(--green); margin-bottom: 2px; }
+.hcard-val-sm { font-size: 14px; font-weight: 700; color: var(--secondary); }
 .hcard-label { display: block; font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
 .hcard-bar { height: 4px; background: rgba(255,255,255,0.06); border-radius: 4px; overflow: hidden; }
 .hcard-bar div { height: 100%; background: var(--bc, var(--green)); border-radius: 4px; }
+
+/* ── ANALYTICS ── */
+.analytics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.analytics-card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 24px 20px; transition: border-color .2s, transform .2s; }
+.analytics-card:hover { border-color: rgba(6,182,212,0.3); transform: translateY(-4px); }
+.analytics-icon { font-size: 28px; margin-bottom: 12px; }
+.analytics-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 8px; color: var(--secondary); }
+.analytics-card p { color: var(--text-secondary); font-size: 13px; line-height: 1.6; }
 
 /* ── HABITS & FOCUS ── */
 .split-section { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -190,6 +200,7 @@ svg defs { display: block; }
   .section { padding: 72px 0; }
   .features-grid { grid-template-columns: 1fr 1fr; }
   .feature-wide { grid-column: span 2; }
+  .analytics-grid { grid-template-columns: repeat(2, 1fr); }
   .modules-grid { grid-template-columns: repeat(3, 1fr); }
   .health-split { grid-template-columns: 1fr; gap: 40px; }
   .split-section { grid-template-columns: 1fr; }
@@ -229,7 +240,7 @@ svg defs { display: block; }
   .feature-wide { grid-column: span 1; }
   .feature-card { padding: 24px; }
 
-  /* Modules */
+  .analytics-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .modules-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .module-card { padding: 18px 14px; }
 

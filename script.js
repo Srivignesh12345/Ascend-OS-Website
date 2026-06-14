@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll(
-  '.feature-card, .module-card, .hcard, .split-card, .finance-card, .step, .score-card'
+  '.feature-card, .module-card, .hcard, .split-card, .finance-card, .step, .score-card, .analytics-card'
 ).forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(24px)';
@@ -49,7 +49,8 @@ const statsObserver = new IntersectionObserver((entries) => {
       const nums = e.target.querySelectorAll('.stat-num');
       nums.forEach(n => {
         const txt = n.textContent;
-        if (txt === '12+') animateCounter(n, 12, '+');
+        if (txt === '12') animateCounter(n, 12, '');
+        else if (txt === '5') animateCounter(n, 5, '');
         else if (txt === '100%') animateCounter(n, 100, '%');
       });
       statsObserver.unobserve(e.target);
