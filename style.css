@@ -230,6 +230,7 @@ svg defs { display: block; }
   .hero-stats { padding: 16px 12px; width: 100%; }
   .stat { padding: 0 12px; }
   .stat-num { font-size: 22px; }
+  .stat-hide-sm { display: none; }
 
   /* Score */
   .score-card { padding: 28px 20px; gap: 28px; }
@@ -240,12 +241,16 @@ svg defs { display: block; }
   .feature-wide { grid-column: span 1; }
   .feature-card { padding: 24px; }
 
+  /* Analytics & Modules */
   .analytics-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .analytics-card { padding: 18px 14px; }
   .modules-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .module-card { padding: 18px 14px; }
 
   /* Health */
+  .health-split { gap: 32px; }
   .health-cards { grid-template-columns: 1fr 1fr; }
+  .hcard-wide { grid-column: span 2; }
 
   /* Habits/Focus */
   .split-card { padding: 28px 20px; }
@@ -254,11 +259,24 @@ svg defs { display: block; }
   /* Finance */
   .finance-card { padding: 20px; }
   .finance-amount { font-size: 24px; }
+  .ff-item { font-size: 13px; padding: 8px 14px; }
 
   /* Download */
   .download-wrapper { gap: 32px; }
   .download-steps { padding: 24px 20px; }
+  .btn-large { font-size: 15px; padding: 14px 24px; }
 
   /* Footer */
   .footer-modules { gap: 6px; }
+  .footer-copy { font-size: 12px; text-align: center; padding: 0 16px; }
+}
+
+@media (max-width: 380px) {
+  .analytics-grid { grid-template-columns: 1fr; }
+  .modules-grid { grid-template-columns: 1fr; }
+  .health-cards { grid-template-columns: 1fr; }
+  .hcard-wide { grid-column: span 1; }
+  .stat { padding: 0 8px; }
+  .stat-num { font-size: 18px; }
+  .stat-label { font-size: 10px; }
 }

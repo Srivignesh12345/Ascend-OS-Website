@@ -19,7 +19,7 @@
         <img src="logo.png" alt="AscendOS" class="logo-img" />
         <span class="logo-text">AscendOS</span>
       </div>
-      <button class="nav-hamburger" id="navToggle" aria-label="Menu">☰</button>
+      <button type="button" class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">☰</button>
       <div class="nav-links" id="navLinks">
         <a href="#features" onclick="closeNav()">Features</a>
         <a href="#modules" onclick="closeNav()">Modules</a>
@@ -49,8 +49,8 @@
         <div class="stat-divider"></div>
         <div class="stat"><span class="stat-num">AI</span><span class="stat-label">Coaching</span></div>
         <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">5</span><span class="stat-label">Health Metrics</span></div>
-        <div class="stat-divider"></div>
+        <div class="stat stat-hide-sm"><span class="stat-num">5</span><span class="stat-label">Health Metrics</span></div>
+        <div class="stat-divider stat-hide-sm"></div>
         <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Free</span></div>
       </div>
     </div>
@@ -254,7 +254,7 @@
           <div class="hcard"><span class="hcard-icon">😴</span><span class="hcard-val">7.2h</span><span class="hcard-label">Sleep last night</span><div class="hcard-bar"><div style="width:90%;--bc:#8b5cf6"></div></div></div>
           <div class="hcard"><span class="hcard-icon">🔥</span><span class="hcard-val">423</span><span class="hcard-label">Calories burned</span><div class="hcard-bar"><div style="width:60%;--bc:#f97316"></div></div></div>
           <div class="hcard"><span class="hcard-icon">❤️</span><span class="hcard-val">68 bpm</span><span class="hcard-label">Resting HR</span><div class="hcard-bar"><div style="width:40%;--bc:#ef4444"></div></div></div>
-          <div class="hcard hcard-wide"><span class="hcard-icon">🔄</span><span class="hcard-val-sm">Auto-refreshes every 5 min</span><span class="hcard-label">Live sync via Health Connect</span></div>
+          <div class="hcard hcard-wide"><span class="hcard-icon" style="margin-bottom:0">🔄</span><div><span class="hcard-val-sm">Auto-refreshes every 5 min</span><span class="hcard-label" style="margin-bottom:0">Live sync via Health Connect</span></div></div>
         </div>
       </div>
     </div>
@@ -433,7 +433,7 @@
           <span>Diary</span><span>Notes</span><span>Voice Notes</span><span>AI Coach</span><span>Gamification</span>
           <span>Timeline</span><span>Wellbeing</span><span>Analytics</span>
         </div>
-        <p class="footer-copy">Built with Flutter · Powered by Firebase &amp; Google Gemini · Health Connect integration</p>
+        <p class="footer-copy">Built with Flutter &middot; Powered by Firebase &amp; Google Gemini &middot; Health Connect integration</p>
       </div>
     </div>
   </footer>
